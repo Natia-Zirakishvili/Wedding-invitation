@@ -1,7 +1,6 @@
 body {
 	background-image: url(https://www.searchpng.com/wp-content/uploads/2019/01/watercolor-heart-background-png.png);
 }
-}
 .container {
 	max-width: 1170px;
 	width: 100%;
@@ -9,9 +8,15 @@ body {
 }
 
 .flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .header {
@@ -51,6 +56,8 @@ body {
 }
 
 .invitation {
+	background: -webkit-radial-gradient(circle, #FFB6C1, #f7e7ce61);
+	background: -o-radial-gradient(circle, #FFB6C1, #f7e7ce61);
 	background: radial-gradient(circle, #FFB6C1, #f7e7ce61);
 	position: relative;
 	margin-top: 40px;
@@ -71,12 +78,16 @@ body {
 	width: 200px;
 	right:  5%;
 	top: 28%;
-	transform: rotate(25deg);
+	-webkit-transform: rotate(25deg);
+	    -ms-transform: rotate(25deg);
+	        transform: rotate(25deg);
 	position: absolute;
 }
 
 .date:hover {
-	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);
 	width: 300px;
 }
 
@@ -138,7 +149,8 @@ body {
 
 .map {
 	margin-top: 30px;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
 .map img {
@@ -157,7 +169,8 @@ iframe {
 	width: 100%;
 }
 .cntbox {
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	margin: 30px;
 	padding-bottom: 30px;
 }
@@ -171,7 +184,8 @@ iframe {
 	background-color: #FFFAFA;
 	border: 1px solid grey;
 	width: 300px;
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .contactus h1 {
@@ -213,11 +227,17 @@ iframe {
 
 @media (max-width: 1000px) {
 	.flex {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.header, .nav-ul {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	.header img {
@@ -235,6 +255,7 @@ iframe {
 		left: 15%;
 	
 	}
+}
 
 @media (max-width: 800px) {
 	.save {
@@ -246,7 +267,9 @@ iframe {
 	}
 
 	.date:hover {
-	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);
 	width: 150px;
 	}
 
@@ -273,8 +296,6 @@ iframe {
 		bottom: 5%;
 		text-align: center;
 	}
-
-
 }
 
 @media (max-width: 400px) {
@@ -293,5 +314,4 @@ iframe {
 	.icouple, .iring, .itoast, .iheart {
 		width: 50px;
 	}
-
 }
